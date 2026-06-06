@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(../assets/login/fundo-pagina-login.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.vidro {
+  background: rgba(255, 255, 255, 0.15); /* Fundo branco semitransparente */
+  backdrop-filter: blur(10px); /* Aplica o desfoque no fundo */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores Safari */
+  border-radius: 16px; /* Bordas arredondadas */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda fina e translúcida */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+.form{
+    background-color: transparent;
+    color: white;
+}
+
+.form-control{
+    background-color: rgba(0, 120, 164, 0.16);
+    color: white;
+    border: none;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid #238200;
+    background-color: rgba(0, 120, 164, 0.16);
+    color: white;
+}
