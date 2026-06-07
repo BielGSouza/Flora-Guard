@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .texto-header {
     font-size: 0.5625rem;
 }
@@ -26,4 +32,130 @@
     height: 10px;
     background-color: green;
     border-radius: 50%;
+}
+
+.text-menor{
+    font-size: 0.5rem;
+}
+
+.mapa-container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mapa-img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.mapa{
+    min-height: 300px;
+
+    background-image: url("../assets/dashboard/mapa\ termico\ 1.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1.7rem;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rodape{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.text-rodape{
+    font-size: 0.5rem;
+}
+
+.alerta{
+    width: 6px;
+    height: 6px;
+    background-color: yellow;
+}
+
+
+.risco{
+    width: 6px;
+    height: 6px;
+    background-color: red;
+}
+
+.text-14{
+    font-size: 0.736rem;
+    color: orange;
+}
+
+.text-63{
+    font-size: 3.31rem;
+    color: orange;
+}
+
+.text-32{
+    font-size: 2rem;
+    color: orange;
+}
+
+.text-11{
+    font-size: 0.57rem;
+}
+
+.text-8{
+    font-size: 0.42rem
+}
+
+.p-8{
+    padding: 8px;
+}
+
+.text-orange{
+    color: orange;
+}
+
+.text-red{
+    color: red;
+}
+
+.border-bootom{
+    border-bottom: 1px solid gray;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.nav-flora{
+    position: fixed;
+    bottom: 0px;
+    background-color: #111527;
+    margin: 10px;
+    border-radius: 15px;
 }
