@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.texto-header {
+    font-size: 0.5625rem;
+}
+
+.icone-user{
+    background-color: #111527;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.text-card-ativo{
+    font-size: 0.6rem;
+    color: green;
+}
+
+.borda-card-ativo{
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+#circle{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
