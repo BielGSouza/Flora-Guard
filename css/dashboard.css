@@ -51,7 +51,7 @@
 }
 
 .mapa{
-    min-height: 300px;
+    min-height: 242px;
 
     background-image: url("../assets/dashboard/mapa\ termico\ 1.png");
     background-size: cover;
@@ -153,9 +153,13 @@
 }
 
 .nav-flora{
-    position: fixed;
+    position: sticky;
     bottom: 0px;
     background-color: #111527;
-    margin: 10px;
+    margin-top: 10px;
     border-radius: 15px;
+}
+
+.w-90{
+    width: 90%;
 }
