@@ -10,47 +10,47 @@
     font-size: 0.5625rem;
 }
 
-.icone-user{
+.icone-user {
     background-color: #111527;
     color: white;
     border-radius: 50%;
     padding: 10px;
 }
 
-.text-card-ativo{
+.text-card-ativo {
     font-size: 0.6rem;
     color: green;
 }
 
-.borda-card-ativo{
+.borda-card-ativo {
     border: 1px solid green;
     border-radius: 4px;
 }
 
-#circle{
+#circle {
     width: 10px;
     height: 10px;
     background-color: green;
     border-radius: 50%;
 }
 
-.text-menor{
+.text-menor {
     font-size: 0.5rem;
 }
 
-.mapa-container{
+.mapa-container {
     position: relative;
     width: 100%;
     max-width: 1200px;
 }
 
-.mapa-img{
+.mapa-img {
     width: 100%;
     display: block;
     border-radius: 20px;
 }
 
-.mapa{
+.mapa {
     min-height: 242px;
 
     background-image: url("../assets/dashboard/mapa\ termico\ 1.png");
@@ -64,7 +64,7 @@
     padding: 1rem;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     inset: 0;
 
@@ -75,91 +75,112 @@
     padding: 1.7rem;
 }
 
-.topo{
+.topo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.rodape{
+.rodape {
     display: flex;
     justify-content: flex-end;
 }
 
-.btn{
+.btn {
     padding: 5px;
     height: 30px;
     width: 30px;
 }
 
-.text-rodape{
+.text-rodape {
     font-size: 0.5rem;
 }
 
-.alerta{
+.alerta {
     width: 6px;
     height: 6px;
     background-color: yellow;
 }
 
 
-.risco{
+.risco {
     width: 6px;
     height: 6px;
     background-color: red;
 }
 
-.text-14{
+.text-14 {
     font-size: 0.736rem;
     color: orange;
 }
 
-.text-63{
+.text-63 {
     font-size: 3.31rem;
     color: orange;
 }
 
-.text-32{
+.text-32 {
     font-size: 2rem;
     color: orange;
 }
 
-.text-11{
+.text-11 {
     font-size: 0.57rem;
 }
 
-.text-8{
+.text-8 {
     font-size: 0.42rem
 }
 
-.p-8{
+.p-8 {
     padding: 8px;
 }
 
-.text-orange{
+.text-orange {
     color: orange;
 }
 
-.text-red{
+.text-red {
     color: red;
 }
 
-.border-bootom{
+.border-bootom {
     border-bottom: 1px solid gray;
 }
 
-.bg-red{
+.bg-red {
     background-color: red;
 }
 
-.nav-flora{
-    position: sticky;
+.nav-flora {
+    position: absolute;
     bottom: 0px;
     background-color: #111527;
     margin-top: 10px;
     border-radius: 15px;
+    max-width: 400px;
 }
 
-.w-90{
+.w-90 {
     width: 90%;
+}
+
+.table-responsive-custom {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.h-md-100 {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .nav-flora {
+        position: static;
+        left: 0px;
+
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+    }
 }

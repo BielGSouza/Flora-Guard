@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Termico - Flora Guard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mapa.css">
+</head>
+
+<body class="vh-100 vw-100">
+    <div class="row g-0 w-100 h-100">
+        <div
+            class="col-2 h-100 bg-color-blue p-0 d-flex flex-column align-items-center justify-content-between py-3 gap-4 borda-direita">
+            <div class="d-flex flex-column w-100 align-items-center gap-4">
+                <img src="../assets/nav/logo-nav-pc.png" alt="" width="120">
+                <div id="elementos-nav" class="w-100">
+                    <a href="../pages/dashboard.html" class="text-decoration-none">
+                        <div class="nav-item d-flex align-items-center px-4">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-dashboard.svg" alt="">
+                            </div>
+                            <p class="mb-0 text-white SpaceGrotesk ts-14">DASHBOARD</p>
+                        </div>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                        <div class="nav-item d-flex align-items-center px-4 ativo">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-mapa-ativo.svg" alt="">
+                            </div>
+                            <p class="mb-0 text-white SpaceGrotesk ts-14">MAPA TÉRMICO</p>
+                        </div>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                        <div class="nav-item d-flex align-items-center px-4">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-alerta.svg" alt="">
+                            </div>
+                            <p class="mb-0 text-white SpaceGrotesk ts-14">ALERTAS</p>
+                        </div>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                        <div class="nav-item d-flex align-items-center px-4">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-relatorio.svg" alt="">
+                            </div>
+                            <p class="mb-0 text-white SpaceGrotesk ts-14">RELATÓRIOS</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="p-3 rounded-4 border w-75">
+                <div class="d-flex gap-2">
+                    <div class="circle"></div>
+                    <p class="mb-0 SpaceGrotesk ts-14 text-success">SISTEMA ATIVO</p>
+                </div>
+                <p class="mb-0 SpaceGrotesk ts-14 text-white">Todos os sistemas operacionais</p>
+            </div>
+        </div>
+        <div class="col-10 p-0 bg-color-blue d-flex flex-column">
+            <div id="cabecalho" class="d-flex justify-content-between p-3">
+                <h1 class="fs-2 text-white">MAPA TÉRMICO</h1>
+                <div class="dropdown dropdown-personalizado">
+                    <button class="btn btn-estilo text-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../assets/dashboard/User 1.svg" alt="">
+                        USER
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" style="width: 200px;">
+                        <li><a class="dropdown-item active" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#"></a></li>
+                        <li><a class="dropdown-item" href="#">Temas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-grow-1 p-4">
+                <div id="mapa" class="h-100 rounded-4 p-3 d-flex flex-column justify-content-between">
+                    <div id="topo" class="d-flex justify-content-between">
+                        <div class="d-flex gap-2 bg-color-blue p-3 rounded-4">
+                            <div id="retangulo"></div>
+                            <div class="d-flex flex-column justify-content-around">
+                                <p class="SpaceGrotesk text-14 mb-0 text-danger">50°C</p>
+                                <p class="SpaceGrotesk text-14 mb-0 t-orangered">40°C</p>
+                                <p class="SpaceGrotesk text-14 mb-0 t-orange">35°C</p>
+                                <p class="SpaceGrotesk text-14 mb-0 text-warning">30°C</p>
+                                <p class="SpaceGrotesk text-14 mb-0 t-yellowgreen">25°C</p>
+                                <p class="SpaceGrotesk text-14 mb-0 text-success">20°C</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between">
+                            <button class="btn btn-secundary bg-color-blue text-white d-flex justify-content-center align-items-center">
+                                <img src="../assets/mapa/icone/image 7.png" width="24" alt="">
+                            </button>
+                            <button class="btn btn-secundary bg-color-blue text-white d-flex justify-content-center align-items-center">
+                                <img src="../assets/mapa/icone/image 8.png" width="24" alt="">
+                            </button>
+                            <button class="btn btn-secundary bg-color-blue text-white d-flex justify-content-center align-items-center">
+                                <img src="../assets/mapa/icone/image 9.png" width="24" alt="">
+                            </button>
+                            <button class="btn btn-secundary bg-color-blue text-white d-flex justify-content-center align-items-center">
+                                <img src="../assets/mapa/icone/image 10.png" width="24" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div id="rodape" class="d-flex flex-column align-items-end">
+                        <button
+                            class="btn btn-secundary bg-color-blue text-white d-flex justify-content-center align-items-center text-14">+</button>
+                        <button
+                            class="btn btn-secundary bg-color-blue text-white d-flex justify-content-center align-items-center">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

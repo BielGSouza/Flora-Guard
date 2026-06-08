@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.nav-item{
+    padding: 20px 0px;
+    gap: 10px
+}
+.nav-item:hover{
+    background-color: #04161E;
+    border-right: 5px solid green;
+}
+
+.ativo{
+    background-color: #04161E;
+    border-right: 5px solid green;
+}
+
+.img-nav{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ts-14{
+    font-size: 0.73rem;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.borda-direita{
+    border-right: 3px solid #0d3d9c;
+}
+
+.btn-estilo{
+    background-color: #04161E;
+    border: 3px solid #0d3d9c;
+    border-radius: 15px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-estilo:hover{
+    background-color: rgb(12, 75, 75);
+    color: black
+}
+
+.dropdown-toggle[aria-expanded="true"] {
+    background-color: #04161E;
+    color: white;
+}
+
+#mapa{
+    background-image: url(../assets/mapa/mapa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dropdown-personalizado{
+    width: 15%
+}
+
+#retangulo{
+    width: 32px;
+    height: 150px;
+    background-image: linear-gradient(to top, #0D9D00, #80C800, #F3F300, #F85F00, #FF0000);
+    border-radius: 5px;
+}
+
+.text-14{
+    font-size: 14px;
+}
+
+.t-orange{
+    color: orange;
+}
+
+.t-orangered{
+    color: orangered;
+}
+
+.t-yellowgreen{
+    color: yellowgreen;
+}
