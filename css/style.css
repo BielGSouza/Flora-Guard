@@ -94,6 +94,18 @@ body {
     line-height: 1.7;
 }
 
+.text-11{
+    font-size: 11px
+}
+
+.celula{
+    padding: 1rem;
+}
+
+.celula:hover{
+    background-color: #0B1F3A;
+}
+
 @media (max-width: 991px) {
     .alinhamento-solucao {
         display: flex;
