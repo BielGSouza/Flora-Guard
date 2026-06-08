@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    height: auto;
+}
+
+html {
+    height: 100%;
+}
+
 .texto-header {
     font-size: 0.5625rem;
 }
@@ -41,13 +50,16 @@
 .mapa-container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
 }
 
 .mapa-img {
     width: 100%;
     display: block;
     border-radius: 20px;
+}
+
+.h-45{
+    heigth: 40%
 }
 
 .mapa {
@@ -174,6 +186,10 @@
     height: 100%;
 }
 
+.fs-8{
+    font-size: 8px
+}
+
 @media (min-width: 768px) {
     .nav-flora {
         position: static;
@@ -183,4 +199,11 @@
         height: 100vh;
         width: auto;
     }
+
+     #nav-desktop {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
 }
+
