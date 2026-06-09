@@ -30,6 +30,31 @@
     border-right:  2px solid rgba(128, 128, 128, 0.216);
 }
 
+.item-clima{
+    position: relative;
+}
+
+.modal-clima {
+    position: absolute;
+    bottom: 110%; /* acima do item */
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+
+    background: #1a1a1a;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.item-clima:hover .modal-clima {
+    display: block;
+}
+
+.fs-7{
+    font-size: 0.8rem;
+}
+
 @media (max-width: 768px) {
     .vh-100 {
         height: 94vh !important;
