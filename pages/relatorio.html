@@ -34,53 +34,64 @@
             border-radius: 10px;
         }
     </style>
+    <link rel="stylesheet" href="../css/mapa.css">
 </head>
 
 <body class="bg-color-blue min-vh-100 d-md-flex">
     <div class="row g-0 w-100 min-vh-100">
         
-        <nav id="nav-desktop" class="col-md-2 h-100 bg-color-blue p-0 d-flex flex-column align-items-center justify-content-between py-3 gap-4 borda-direita d-none d-md-flex" style="border-right: 1px solid rgba(255,255,255,0.1);">
+        <div id="nav-desktop"
+            class="col-md-2 h-100 bg-color-blue p-0 d-flex flex-column align-items-center justify-content-between py-3 gap-4 borda-direita d-none d-md-flex">
             <div class="d-flex flex-column w-100 align-items-center gap-4">
-                <img src="../assets/nav/logo-nav-pc.png" alt="Flora Guard" width="60%" class="d-none d-md-block" onerror="this.src='../assets/Frame 12.svg'">
-                
-                <div id="elementos-nav" class="w-100 mt-4 d-flex flex-column gap-3">
-                    <a href="dashboard.html" class="text-decoration-none">
+                <img src="../assets/nav/logo-nav-pc.png" alt="" width="60%" class="d-none d-md-block">
+                <div id="elementos-nav" class="w-100">
+                    <a href="../pages/dashboard.html" class="text-decoration-none">
                         <div class="nav-item d-flex align-items-center px-4">
-                            <div class="img-nav me-3">
-                                <img src="../assets/nav/icone-dashboard.svg" alt="Dashboard">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-dashboard.svg" alt="">
                             </div>
                             <p class="mb-0 text-white SpaceGrotesk ts-14">DASHBOARD</p>
                         </div>
                     </a>
-                    
-                    <a href="mapa.html" class="text-decoration-none">
+                    <a href="../pages/mapa.html" class=" text-decoration-none">
                         <div class="nav-item d-flex align-items-center px-4">
-                            <div class="img-nav me-3">
-                                <img src="../assets/nav/icone-mapa.svg" alt="Mapa">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-mapa.svg" alt="">
                             </div>
                             <p class="mb-0 text-white SpaceGrotesk ts-14">MAPA TÉRMICO</p>
                         </div>
                     </a>
-
-                    <a href="relatorio.html" class="text-decoration-none">
-                        <div class="nav-item d-flex align-items-center px-4 ativo" style="background-color: rgba(25, 135, 84, 0.2); border-left: 4px solid #198754;">
-                            <div class="img-nav me-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#198754" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
-                                    <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
-                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-                                </svg>
+                    <a href="../pages/alerta.html" class=" text-decoration-none">
+                        <div class="nav-item d-flex align-items-center px-4">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-alerta.svg" alt="">
                             </div>
-                            <p class="mb-0 text-success fw-bold SpaceGrotesk ts-14">RELATÓRIO</p>
+                            <p class="mb-0 text-white SpaceGrotesk ts-14">ALERTAS</p>
+                        </div>
+                    </a>
+                    <a href="../pages/relatorio.html" class=" text-decoration-none">
+                        <div class="nav-item d-flex align-items-center px-4 ativo">
+                            <div class="img-nav">
+                                <img src="../assets/nav/icone-relatorio-ativo.svg" alt="">
+                            </div>
+                            <p class="mb-0 text-white SpaceGrotesk ts-14">RELATÓRIOS</p>
                         </div>
                     </a>
                 </div>
             </div>
-        </nav>
+            <div class="p-3 rounded-4 border w-75 d-none d-sm-block">
+                <div class="d-flex gap-2">
+                    <div class="circle"></div>
+                    <p class="mb-0 SpaceGrotesk ts-14 text-success">SISTEMA ATIVO</p>
+                </div>
+                <p class="mb-0 SpaceGrotesk ts-14 text-white">Todos os sistemas operacionais</p>
+            </div>
+        </div>
 
         <main class="col-12 col-md-10 bg-color-blue p-4">
             
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
-                <h1 class="fs-2 text-white Orbitron mb-0">RELATÓRIO GERAL</h1>
+                <h1 class="fs-2 text-white Orbitron mb-0 SpaceGrotesk">RELATÓRIO GERAL</h1>
                 
                 <div class="d-flex gap-2">
                     <input type="date" class="form-control bg-dark text-white border-secondary">
@@ -168,23 +179,29 @@
 
         </main>
 
-        <div id="nav-mobile" class="d-flex d-md-none bg-dark w-100 justify-content-around py-2" style="position: sticky; bottom: 0; z-index: 1000; border-top: 1px solid rgba(255,255,255,0.1);">
-            <a href="dashboard.html" class="text-decoration-none text-center">
-                <img src="../assets/nav/icone-dashboard.svg" alt="" width="24">
-                <span class="d-block text-white" style="font-size: 10px;">Dashboard</span>
-            </a>
-            <a href="mapa.html" class="text-decoration-none text-center">
-                <img src="../assets/nav/icone-mapa.svg" alt="" width="24">
-                <span class="d-block text-white" style="font-size: 10px;">Mapa</span>
-            </a>
-            <a href="relatorio.html" class="text-decoration-none text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#198754" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
-                    <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
-                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-                </svg>
-                <span class="d-block text-success fw-bold" style="font-size: 10px;">Relatório</span>
-            </a>
-        </div>
+        <div id="nav-mobile" class="d-flex d-md-none">
+
+        <a href="../pages/dashboard.html" class="h-100 d-flex flex-column justify-content-center">
+            <img src="../assets/nav/icone-dashboard.svg">
+            <span>Dashboard</span>
+        </a>
+
+        <a href="../pages/mapa.html" class="h-100 d-flex flex-column justify-content-center">
+            <img src="../assets/nav/icone-mapa.svg">
+            <span>Mapa</span>
+        </a>
+
+        <a href="../pages/alerta.html" class="h-100 d-flex flex-column justify-content-center">
+            <img src="../assets/nav/icone-alerta.svg">
+            <span>Alertas</span>
+        </a>
+
+        <a href="../pages/relatorio.html" class="ativo-mobile h-100 d-flex flex-column justify-content-center">
+            <img src="../assets/nav/icone-relatorio-ativo.svg">
+            <span>Relatórios</span>
+        </a>
+
+    </div>
 
     </div>
 

@@ -31,6 +31,11 @@ body, html {
     border-right: 5px solid green;
 }
 
+.ativo-mobile{
+    border-top: 5px solid green;
+    background-color: #111527;
+}
+
 .img-nav {
     width: 32px;
     height: 32px;

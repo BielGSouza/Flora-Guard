@@ -63,31 +63,23 @@
         </div>
 
         <main class="col-12 col-md-10 pt-2 bg-color-blue">
-            <div id="cabecalho" class="d-flex justify-content-between p-3 py-0">
+            <div id="cabecalho" class="d-flex justify-content-between p-3">
                 <h1 class="fs-2 text-white">DASHBOARD</h1>
                 <div class="dropdown dropdown-personalizado w-auto">
-                    <div class="d-flex gap-1">
-                        <div class="d-flex align-items-center gap-2 px-1 borda-card-ativo">
-                            <div id="circle"></div>
-                            <p class="text-card-ativo mb-0 fs-8">SISTEMA ATIVO</p>
-                        </div>
-
-                        <button class="btn btn-estilo text-white dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../assets/dashboard/User 1.svg" alt="">
-                            USER
-                        </button>
-
-                        <ul class="dropdown-menu dropdown-menu-dark" style="width: 200px;">
-                            <li><a class="dropdown-item active" href="#">Perfil</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><a class="dropdown-item" href="#">Temas</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Configurações</a></li>
-                        </ul>
-                    </div>
+                    <button class="btn btn-estilo text-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../assets/dashboard/User 1.svg" alt="">
+                        USER
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" style="width: 200px;">
+                        <li><a class="dropdown-item active" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#"></a></li>
+                        <li><a class="dropdown-item" href="#">Temas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -144,7 +136,8 @@
                         </section>
                     </div>
                     <div class="col col-6 col-md-4 d-flex flex-column gap-2 justify-content-between">
-                        <div class="row-6 h-50 bg-color-blue-dois rounded-4 d-flex flex-column justify-content-center p-8 gap-1">
+                        <div
+                            class="row-6 h-50 bg-color-blue-dois rounded-4 d-flex flex-column justify-content-center p-8 gap-1">
                             <p class="mb-0 SpaceGrotesk text-11 text-white">DADOS ATUAIS DA ZONA B7</p>
                             <div>
                                 <table class="w-100">
@@ -178,7 +171,8 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="row-6 h-50 bg-color-blue-dois rounded-4 p-8 d-flex justify-content-center flex-column gap-1">
+                        <div
+                            class="row-6 h-50 bg-color-blue-dois rounded-4 p-8 d-flex justify-content-center flex-column gap-1">
                             <p class="mb-0 SpaceGrotesk text-11 text-white">MÓDULOS DE MICROASPERSÃO (IoT)</p>
                             <div class="w-100 d-flex flex-column ">
                                 <img src="../assets/dashboard/microAspersão 1.png" alt="" height="50px">
@@ -227,7 +221,8 @@
                                     </td>
                                     <td><img src="../assets/dashboard/seta 1.png" alt=""></td>
                                 </tr>
-                                <tr class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
+                                <tr
+                                    class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
                                     <td><img src="../assets/dashboard/Orbital 2.svg" alt=""></td>
                                     <td>
                                         <p class="mb-0 SpaceGrotesk text-11 text-white">11:45 AM</p>
@@ -240,7 +235,8 @@
                                     </td>
                                     <td><img src="../assets/dashboard/seta 1.png" alt=""></td>
                                 </tr>
-                                <tr class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
+                                <tr
+                                    class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
                                     <td><img src="../assets/dashboard/Orbital 2.svg" alt=""></td>
                                     <td>
                                         <p class="mb-0 SpaceGrotesk text-11 text-white">11:45 AM</p>
@@ -253,7 +249,8 @@
                                     </td>
                                     <td><img src="../assets/dashboard/seta 1.png" alt=""></td>
                                 </tr>
-                                <tr class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
+                                <tr
+                                    class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
                                     <td><img src="../assets/dashboard/Orbital 2.svg" alt=""></td>
                                     <td>
                                         <p class="mb-0 SpaceGrotesk text-11 text-white">11:45 AM</p>
@@ -266,7 +263,8 @@
                                     </td>
                                     <td><img src="../assets/dashboard/seta 1.png" alt=""></td>
                                 </tr>
-                                <tr class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
+                                <tr
+                                    class="d-none d-md-flex justify-content-between align-items-center border-bootom p-1 celula">
                                     <td><img src="../assets/dashboard/Orbital 2.svg" alt=""></td>
                                     <td>
                                         <p class="mb-0 SpaceGrotesk text-11 text-white">11:45 AM</p>
@@ -290,22 +288,22 @@
 
     <div id="nav-mobile" class="d-flex d-md-none">
 
-        <a href="../pages/dashboard.html">
+        <a href="../pages/dashboard.html" class="ativo-mobile h-100 d-flex flex-column justify-content-center">
             <img src="../assets/nav/icone-dashboard-ativo.svg">
             <span>Dashboard</span>
         </a>
 
-        <a href="../pages/mapa.html">
+        <a href="../pages/mapa.html" class="h-100 d-flex flex-column justify-content-center">
             <img src="../assets/nav/icone-mapa.svg">
             <span>Mapa</span>
         </a>
 
-        <a href="../pages/alerta.html">
+        <a href="../pages/alerta.html" class="h-100 d-flex flex-column justify-content-center">
             <img src="../assets/nav/icone-alerta.svg">
             <span>Alertas</span>
         </a>
 
-        <a href="../pages/relatorio.html">
+        <a href="../pages/relatorio.html" class="h-100 d-flex flex-column justify-content-center">
             <img src="../assets/nav/icone-relatorio.svg">
             <span>Relatórios</span>
         </a>
