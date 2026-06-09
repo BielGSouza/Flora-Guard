@@ -7,7 +7,6 @@ body, html {
 }
 
 #container-pai {
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
